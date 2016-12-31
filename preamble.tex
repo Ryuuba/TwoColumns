@@ -1,0 +1,68 @@
+\usepackage[cm]{fullpage}
+\usepackage{listingsutf8} % Embebbed formatted code to the file
+\lstset{basicstyle=\footnotesize\ttfamily,language=C++,keywordstyle=\color{Xoc},stringstyle=\color{Izt},}
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\graphicspath{{Figures/}{Logo/}} % Directories where images are stored
+\usepackage{wrapfig} % Allows in-line images
+\usepackage[svgnames]{xcolor} % Allows the use of colors across the document
+   \definecolor{Azc}{RGB}{205,3,46}
+   \definecolor{Izt}{RGB}{87,165,25}
+   \definecolor{Xoc}{RGB}{0,114,206}
+   \definecolor{Cua}{RGB}{240,130,0}
+   \definecolor{Ler}{RGB}{173,37,168}
+   \definecolor{Wolf}{RGB}{64,64,64}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{sectsty}
+\chapterfont{\color{Xoc}}
+\sectionfont{\color{Xoc}}
+\subsectionfont{\color{Xoc}}
+\usepackage{hyperref}
+\hypersetup{
+   colorlinks=true,
+   linkcolor=black,
+   citecolor=black,
+   linkbordercolor=white,
+   urlcolor=Xoc,
+   citecolor=Xoc
+}
+\usepackage{url} % Become references in links
+\usepackage[spanish,mexico]{babel} % Requiered for Mexican Spanish hyphenation and table names
+\usepackage[utf8x]{inputenc} % Required for accented characters
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage{algorithm,algpseudocode} %required to write pseudocode
+%\usepackage[sort&compress]{natbib} %change a list of citation [1], [2], [3] to [1-3]
+\usepackage{siunitx} %Requiered to use SI units
+\usepackage{booktabs} %Fancy tables
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\captionsetup[algorithm]{font=footnotesize}
+\usepackage{abstract}
+\setlength{\absleftindent}{0mm}
+\setlength{\absrightindent}{0mm}
+\setlength{\parindent}{0mm} % Do not indent the 1st line of a paragraph.
+\setlength{\parskip}{3mm}   % Add space between paragraphs.
+
+
+\linespread{1.05} % Changes line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Changes the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduces the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customizes the title - do not edit title and author name here, see the TITLE block below
+\begin{center} % Left align
+{\LARGE\@title} % Increases the font size of the title
+
+\vspace{25pt} % Some vertical space between the title and author name
+
+{\small\@author} % Author name
+\\\@date % Date
+
+\vspace{15pt} % Some vertical space between the author block and abstract
+\end{center}
+}
+
+\renewcommand{\abstractname}{\flushleft \textcolor{Xoc}{Resumen}} % Uncomment to change the name of the abstract to something else
+\renewcommand{\lstlistingname}{Código} % Listing -> Code
+\renewcommand{\ALG@name}{Algoritmo}
