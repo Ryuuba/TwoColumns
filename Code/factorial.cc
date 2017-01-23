@@ -6,7 +6,9 @@ unsigned int factorial(unsigned int);
 int main(int argc, char* argv[])
 {
    unsigned num = std::atoi(argv[1]);
-   std::cout << num << "! = " << factorial(num) << std::endl;
+   std::cout << num << "! = " 
+             << factorial(num) 
+             << std::endl;
 }
 
 unsigned int factorial(unsigned int x)
