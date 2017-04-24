@@ -2,8 +2,15 @@
 {
     // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
     "editor.tabSize": 2,
-    // Controla el número de caracteres tras los cuales el editor salta a la línea siguiente. Si el valor se establece en 0, se activa el ajuste del ancho de la ventanilla (ajuste de línea). Si se establece en -1, hace que el editor no ajuste las líneas nunca.
-    "editor.wrappingColumn": 80,
     // Columnas en las que mostrar reglas verticales
-    "editor.rulers": [80]
+    "editor.rulers": [80],
+  // Controls how lines should wrap. Can be:
+  //  - 'off' (disable wrapping),
+  //  - 'on' (viewport wrapping),
+  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+  //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+  "editor.wordWrap": "wordWrapColumn",
+
+  // Controls the wrapping column of the editor when `editor.wordWrap` is 'wordWrapColumn' or 'bounded'.
+  "editor.wordWrapColumn": 80
 }
