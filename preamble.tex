@@ -1,6 +1,6 @@
 \usepackage[cm]{fullpage}
 \usepackage{listingsutf8} % Embebbed formatted code to the file
-\lstset{basicstyle=\footnotesize\ttfamily,language=C++,keywordstyle=\color{Xoc},stringstyle=\color{Izt},}
+\lstset{basicstyle=\footnotesize\ttfamily,language=C++,keywordstyle=\color{Xoc},stringstyle=\color{Izt}}
 \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
 \usepackage{graphicx} % Required for including pictures
 \graphicspath{{Figures/}{Logo/}} % Directories where images are stored
@@ -65,7 +65,9 @@
 
 \renewcommand{\abstractname}{Resumen} % Uncomment to change the name of the abstract to something else
 \renewcommand{\lstlistingname}{Código} % Listing -> Code
-\renewcommand{\ALG@name}{Algoritmo}
+\makeatletter
+\renewcommand*{\ALG@name}{Algoritmo}
+\makeatother
 \newcommand{\gray}[1]{\textcolor{Wolf}{#1}}
 \newcommand{\white}[1]{\textcolor{white}{#1}}
 \newcommand{\red}[1]{\textcolor{Azc}{#1}}
