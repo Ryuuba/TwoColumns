@@ -235,18 +235,18 @@ FUNCTION {repeated.name.dashes} { "------" }
 %% PREDEFINED STRING MACROS %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-MACRO {jan} {"Ene."}
-MACRO {feb} {"Feb."}
-MACRO {mar} {"Mar."}
-MACRO {apr} {"Abr."}
-MACRO {may} {"May"}
-MACRO {jun} {"Jun."}
-MACRO {jul} {"Jul."}
-MACRO {aug} {"Ago."}
-MACRO {sep} {"Sep."}
-MACRO {oct} {"Oct."}
-MACRO {nov} {"Nov."}
-MACRO {dec} {"Dic."}
+MACRO {jan} {"ene."}
+MACRO {feb} {"feb."}
+MACRO {mar} {"mar."}
+MACRO {apr} {"abr."}
+MACRO {may} {"may"}
+MACRO {jun} {"jun."}
+MACRO {jul} {"jul."}
+MACRO {aug} {"ago."}
+MACRO {sep} {"sep."}
+MACRO {oct} {"oct."}
+MACRO {nov} {"nov."}
+MACRO {dec} {"dic."}
 
 
 
@@ -619,7 +619,7 @@ FUNCTION {output.nonnull}
      { skip$ }
    if$ 
   prev.status.quote quote.close =
-     { "''" * }
+     { ">>" * }
      { skip$ }
    if$
   prev.status.space space.normal =
@@ -1426,7 +1426,7 @@ FUNCTION {format.article.title}
         { punct.no 'this.status.punct := }
       if$
       select.language
-      "``" swap$ *
+      "<<" swap$ *
       cap.status.std
     }
   if$
